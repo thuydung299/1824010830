@@ -7,11 +7,13 @@
     <title>Bài Thu Hoạch Thiết Kế Website</title>
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <!-- defer dùng để tài trang xong mới thực hiện scrip, vì hmtl load dữ liệu trên xuống, để bất đồng bộ dung asyn -->
+  <script src="js/main.js" defer></script>
 </head>
-<body>
+<body onload="main();">
 
 <div class="resume">
-   <div class="resume_left">
+   <div class="resume_left" onclick="ramdomMauBackGround()">
      <div class="resume_profile">
        <img src="images/avatar.jpg" alt="ảnh đại điện">
      </div>
@@ -68,7 +70,7 @@
                 <p>Tin Học</p>
              </div>
              <div class="skill_progress">
-               <span style="width: 90%;"></span>
+               <span id="tinhoc"></span>
              </div>
              <div class="skill_per">90%</div>
            </li>
@@ -77,16 +79,16 @@
               <p> Ngoại Ngữ</p>
              </div>
              <div class="skill_progress">
-               <span style="width: 70%;"></span>
+               <span id="ngoaingu" ></span>
              </div>
              <div class="skill_per">70%</div>
            </li>
            <li>
-             <div class="Kỹ năng_name">
+             <div class="skill_name">
               <p> Giao Tiếp</p>
              </div>
              <div class="skill_progress">
-               <span style="width: 100%;"></span>
+               <span  id="giaotiep"></span>
              </div>
              <div class="skill_per">100%</div>
            </li>
@@ -95,16 +97,16 @@
               <p> Tiếng Trung</p>
              </div>
              <div class="skill_progress">
-               <span style="width: 50%;"></span>
+               <span  id="tiengtrung"></span>
              </div>
              <div class="skill_per">50%</div>
            </li>
            <li>
-             <div class="Kỹ năng_name">
+             <div class="skill_name">
                <p>HTML</p>
              </div>
              <div class="skill_progress">
-               <span style="width: 90%;"></span>
+               <span id='html'></span>
              </div>
              <div class="skill_per">90%</div>
            </li>
@@ -207,4 +209,5 @@
   </div>
 </div>
 </body>
+
 </html>
